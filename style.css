@@ -1,0 +1,147 @@
+/*Inspiration for html and css from youtubers mmtuts and Umair Butt & github users cantugabriela & yongjinjiang*/
+
+body{
+    background-color: #EDEDED; 
+}
+
+/*Navbar container*/
+
+.navbar{
+    max-height: 57px;
+    background-color: white; 
+    font-size: 15px; 
+}
+.navigation .navbar-brand{
+    color: white; 
+    margin-left: 30px; 
+    padding: inherit; 
+    font-weight: bold; 
+    background-color: #0BADA6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.active, .dropdown-menu .dropdown-item:active a:hover{
+    background-color:#E7E7E7; 
+}
+.dropdown-item{
+    color: #6D8092; 
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color:#E7E7E7; 
+}
+
+/*Links inside the navbar*/
+
+.nav-link:hover{
+    background-color:#E7E7E7;
+   }
+
+.navbar-brand:hover{
+color: rgb(175, 175, 175);
+}
+
+a{
+    color: #6D8092;
+    font-size: 15px; 
+}
+
+/*Visualizations*/
+
+img{
+    width:100%;
+}
+.active, .panel:hover{
+    border-color:#0BADA6;
+    border-style: solid; 
+    
+}
+.vizualization{
+    width:50%;
+}
+
+.title{
+    color: #0BADA6;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder; 
+    padding-top: 25px; 
+}
+
+.title2{
+    color: #0BADA6;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder; 
+    padding-top: 25px; 
+    text-align: center;
+}
+
+p{
+ color: #6D8092;
+ font-family: Calibria, Helvetica;
+ font-size: 17px; 
+}
+
+.box {
+    margin-top: 60px; 
+    margin-bottom: 62px; 
+    padding: 10px 20px 15px; 
+    color:black;
+    background-color: white; 
+
+}
+
+.table{
+    font-family: Calibria, Helvetica;
+    font-size: 15px; 
+    border-top-color: white; 
+}
+
+/*Footer*/
+
+footer{
+background-color: #666666; 
+border-top-style: solid; 
+border-top-width: 5px; 
+border-top-color: #0BADA6;
+min-height: 55px; 
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px; 
+text-align: center; 
+position: fixed;
+color: white; 
+left: 0;
+bottom: 0;
+width: 100%;
+padding-top: 15px; 
+}
+
+ /*Media Queries */
+
+@media(max-width: 500px){
+.navbar-expand-lg{
+background-color: #0BADA6;
+}
+  
+.navbar{
+    max-height: none; 
+    padding: inherit;
+}
+  
+.navbar div{
+    margin: inherit; 
+    background-color: white;  
+}
+  
+.navbar-brand{
+    padding: 10px; 
+}
+
+button{
+    margin-right: 30px; 
+}
+  
+button:focus {
+
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focusring-color;
+    }
+}

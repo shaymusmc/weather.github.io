@@ -1,0 +1,123 @@
+<!-- Inspiration for html and css from youtubers mmtuts and Umair Butt & github users cantugabriela & yongjinjiang -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max Temperature</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- CSS Style Sheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head> 
+
+<body>
+<!-- Navbar -->
+<!-- Navbar code source and then modified: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
+      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Content Section -->
+  <div class="container">
+    <div class="row">
+		
+	<!-- Left box  -->
+      <div class="col-lg-7 col-md-12">
+        <div class="box">
+          <h3 class="title">Max Temperature</h3>
+          <hr>
+			
+          <img src="images/Lat_vs_Temp.png" alt="Max Temperature Graph">
+          <br>
+          <p>Temperatures along the Equator are tending in the high range. Though there are some temperatures outlying higher than the equator, those outliers are in the Southern Hemisphere where it is currently summer; and we’d expect high temperatures in a summer climate. An extension of this first observation that I find interesting is how close the summer climate and Equator climate are to one another, but that the winter climate diverges so much. I would like to collect data over time periods to see how these plots differ during the various seasons; and see what it looks like when the Northern Hemisphere is in a summer season. From this one snapshot, I would reason to believe the Equators temperature stays quite stable, while the two hemispheres vary quite a bit.</p>
+        </div>
+      </div>
+		
+	<!-- Right Box -->
+      <div class="col-lg-5 col-md-12">
+        <div class="box">
+          <h4 class="title">Visualizations</h4>
+          <hr>
+
+		<!--Images & Resizing-->
+          <div class="container">
+            <div class="row" style="padding-bottom: 40px;">
+				
+              <div class="col-lg-6 col-sm-3">
+                <a href="max_temperature.html">
+                  <img class="panel" src="images/Lat_vs_Temp.png" alt="Max Temperature Graph">
+                </a>
+				  
+              </div>
+              <div class="col-lg-6 col-sm-3">
+                <a href="humidity.html">
+                  <img class="panel" src="images/Lat_vs_Humidity.png" alt="Humidity Graph">
+                </a>
+              </div>
+
+              <div class="col-lg-6 col-sm-3">
+                <a href="cloudiness.html">
+                  <img class="panel" src="images/Lat_vs_Cloudiness.png" alt="Cloudiness Graph">
+                </a>
+				  
+              </div>
+              <div class="col-lg-6 col-sm-3">
+                <a href="wind_speed.html">
+                  <img class="panel" src="images/Lat_vs_WindSpeed.png" alt="Wind Speed Graph">
+                </a>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Footer Section -->
+  <footer>
+    <div class="footer">&copy; Copyright Shaymus McTeague 2020</div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+</body>
+
+</html>
